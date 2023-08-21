@@ -8,8 +8,8 @@ class RssCategory {
 
   factory RssCategory.parse(XmlElement element) {
     var domain = element.getAttribute('domain');
-    var value = element.text;
+    var mvalue = element.value;
 
-    return RssCategory(domain, value);
+    return RssCategory(domain, mvalue!);
   }
 }
